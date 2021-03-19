@@ -1,7 +1,23 @@
 package br.edu.ifpb.padroes.service.log;
 
-public abstract class LogService {
+public class LogService {
 
-    public abstract  void log(String message);
+    public LogService(LogHandler logHandler) {
+        this.logHandler = logHandler;
+    }
 
+    private LogHandler logHandler;
+
+    public void debug(String message) {
+        logHandler.log("stack trace");
+        logHandler.log(message);
+    }
+
+    public void info(String message) {
+        logHandler.log(message);
+    }
+    public void error(String message) {
+        logHandler.log("error");
+        logHandler.log(message);
+    }
 }

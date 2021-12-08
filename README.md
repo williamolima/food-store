@@ -6,4 +6,4 @@ Teremos dois tipos de envio para o servidor, em um tipo é enviado um objeto par
 
 ## Padrão State no pacot <i>payment</i>.
 
-Existe uma condição <i>switch</i> para determinar a forma do pagamento. No lugar dessa condição, vamos adicionar uma interface e controlar o estado atual do pagamento atrazer do métodos.
+Existe uma condição <i>switch</i> para determinar a forma do pagamento. No lugar dessa condição, vamos adicionar uma interface e controlar o estado atual do pagamento atrazer de uma classe controladora. Também são adicionado métodos para mudar o estado do pagamento.
